@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media & Community Marketing Strategy 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .section {
+            padding: 40px;
+        }
+        
+        .section-title {
+            font-size: 2em;
+            color: #2a5298;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .definitions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .definition-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .definition-card h3 {
+            color: #1e3c72;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        
+        .definition-card p {
+            color: #333;
+            font-size: 1.05em;
+        }
+        
+        .strategies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .strategy-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #667eea;
+            transition: transform 0.3s;
+        }
+        
+        .strategy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .strategy-card h4 {
+            color: #2a5298;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+        
+        .strategy-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .strategy-card li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .strategy-card li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .platform-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .platform-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid #667eea;
+        }
+        
+        .platform-card h4 {
+            color: #1e3c72;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .platform-icon {
+            width: 30px;
+            height: 30px;
+            background: #667eea;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        .analytics-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .analytics-list li {
+            background: #f8f9fa;
+            margin: 8px 0;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-size: 0.95em;
+        }
+        
+        .trend-2025 {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+        
+        .trend-2025 h3 {
+            color: #d63031;
+            font-size: 1.6em;
+            margin-bottom: 20px;
+        }
+        
+        .trend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .trend-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .trend-item h5 {
+            color: #d63031;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .best-practices {
+            background: #e8f5e9;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+        
+        .best-practices h3 {
+            color: #2e7d32;
+            font-size: 1.6em;
+            margin-bottom: 20px;
+        }
+        
+        .practices-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .practice-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #4caf50;
+        }
+        
+        .practice-item h5 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+        
+        .footer {
+            background: #2a5298;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .definitions {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Social Media & Community Marketing Strategy</h1>
+            <p>2025 Updated Edition: Verified Data, Current Trends & Proven Strategies</p>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">📚 Core Definitions</h2>
+            <div class="definitions">
+                <div class="definition-card">
+                    <h3>Social Media Marketing</h3>
+                    <p>The strategic use of social media platforms to connect with audiences, build brands, increase sales, and drive website traffic. In 2025, this involves AI-powered content creation, publishing engaging content, social listening, analyzing real-time results, and running highly targeted advertisements across platforms like Instagram, TikTok, LinkedIn, Facebook, and emerging channels.</p>
+                </div>
+                <div class="definition-card">
+                    <h3>Community Marketing</h3>
+                    <p>Marketing strategies focused on building and nurturing authentic communities around brands through blogs, forums, online communities, and interactive platforms. It emphasizes co-creating value with community members, fostering genuine engagement, leveraging user-generated content (UGC), and developing brand advocates who actively participate in conversations and influence others through trust-based relationships.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section" style="background: #f8f9fa;">
+            <h2 class="section-title">🎯 Content Strategies & Tactics</h2>
+            
+            <div class="strategies-grid">
+                <div class="strategy-card">
+                    <h4>Username & Account Strategy</h4>
+                    <ul>
+                        <li>Maintain consistent usernames across platforms</li>
+                        <li>Use abbreviations when character-limited</li>
+                        <li>Add relevant/creative words if unavailable</li>
+                        <li>Verify trademark availability before registration</li>
+                        <li>Secure handles early for brand protection</li>
+                    </ul>
+                </div>
+                
+                <div class="strategy-card">
+                    <h4>Social Media Optimization (SMO)</h4>
+                    <ul>
+                        <li>Conduct keyword research per channel</li>
+                        <li>Use alt text for all images</li>
+                        <li>Implement relevant hashtags strategically</li>
+                        <li>Create shareable, engaging content</li>
+                        <li>Optimize for local SMO when applicable</li>
+                        <li>Provide rewards for engagement</li>
+                    </ul>
+                </div>
+                
+                <div class="strategy-card">
+                    <h4>Content Scheduling (2025 Data)</h4>
+                    <ul>
+                        <li><span class="highlight">Peak Time Window:</span> 8-11 AM weekdays</li>
+                        <li><span class="highlight">Overall Best:</span> Wednesday 8 AM</li>
+                        <li><span class="highlight">Facebook:</span> 9 AM Tuesdays (2-3 posts/week)</li>
+                        <li><span class="highlight">Instagram:</span> 10 AM-3 PM Mon-Thu (2 posts/week)</li>
+                        <li><span class="highlight">X:</span> 9-11 AM Wed-Fri (2 posts/week)</li>
+                        <li><span class="highlight">LinkedIn:</span> 10 AM-1 PM Tue-Thu</li>
+                        <li><span class="highlight">TikTok:</span> 2-5 PM daily (14 posts/week)</li>
+                        <li>Use AI-powered scheduling tools for optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="strategy-card">
+                    <h4>Optimal Posting Frequency (2025)</h4>
+                    <ul>
+                        <li><span class="highlight">Facebook:</span> 2 posts/week (highest engagement)</li>
+                        <li><span class="highlight">Instagram:</span> 2 posts/week (avoid fatigue)</li>
+                        <li><span class="highlight">LinkedIn:</span> 2 posts/week (professional rhythm)</li>
+                        <li><span class="highlight">TikTok:</span> 14 posts/week (daily posting)</li>
+                        <li><span class="highlight">X:</span> 2 posts/week (quality focus)</li>
+                        <li>More posts ≠ more engagement</li>
+                        <li>Consistency beats frequency</li>
+                    </ul>
+                </div>
+                
+                <div class="strategy-card">
+                    <h4>Content Mix Strategy</h4>
+                    <ul>
+                        <li>Balance current vs. evergreen content</li>
+                        <li>Create mobile-first optimized content</li>
+                        <li>Personalize to target audiences</li>
+                        <li>Use storytelling for brand narrative</li>
+                        <li>Maintain consistent voice and tone</li>
+                        <li>Leverage GenAI for content creation</li>
+                    </ul>
+                </div>
+                
+                <div class="strategy-card">
+                    <h4>Influencer Marketing (2025)</h4>
+                    <ul>
+                        <li><span class="highlight">Market Size:</span> $32.55B globally</li>
+                        <li>Micro-influencers: Median CPM $119</li>
+                        <li>Nano-influencers: Up to $211 CPM</li>
+                        <li>Engagement: 6.15%-6.76% (micro/nano)</li>
+                        <li>92% of brands use AI in influencer workflows</li>
+                        <li>Focus: Performance-based partnerships</li>
+                        <li>LinkedIn B2B influencers rising rapidly</li>
+                        <li>TikTok Creator Marketplace essential tool</li>
+                    </ul>
+                </div>
+                
+                <div class="strategy-card">
+                    <h4>Social Listening</h4>
+                    <ul>
+                        <li>Monitor brand mentions across platforms</li>
+                        <li>Track sentiment and consumer feedback</li>
+                        <li>Use tools: HubSpot, Sprout Social, Hootsuite</li>
+                        <li>Respond promptly to customer inquiries</li>
+                        <li>Identify trends and opportunities</li>
+                        <li>Inform overall social strategy</li>
+                    </ul>
+                </div>
+                
+                <div class="strategy-card">
+                    <h4>Accessibility Strategy</h4>
+                    <ul>
+                        <li>Use plain language, avoid jargon</li>
+                        <li>Add captions and alt text to images</li>
+                        <li>Include closed captioning in videos</li>
+                        <li>Avoid high-contrast color combinations</li>
+                        <li>Optimize for screen readers</li>
+                        <li>Follow WCAG guidelines</li>
+                    </ul>
+                </div>
+                
+                <div class="strategy-card">
+                    <h4>Podcasting Strategy</h4>
+                    <ul>
+                        <li>Distribute on Apple Podcasts, Spotify, Google</li>
+                        <li>Create consistent episode schedules</li>
+                        <li>Develop unique brand voice</li>
+                        <li>Include transcripts for accessibility</li>
+                        <li>Promote across social channels</li>
+                        <li>Engage with listener feedback</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">📊 Platform Analytics Overview</h2>
+            
+            <div class="platform-grid">
+                <div class="platform-card">
+                    <h4><span class="platform-icon"></span>Facebook</h4>
+                    <ul class="analytics-list">
+                        <li><strong>Tool:</strong> Meta Business Suite</li>
+                        <li><strong>Engagement Rate:</strong> 0.15-2.08%</li>
+                        <li><strong>Best Frequency:</strong> 2 posts/week</li>
+                        <li>Ad CPC: $0.40-$3.89</li>
+                        <li>Reach rate: 1.20-1.65%</li>
+                        <li>Best format: Photo albums</li>
+                        <li>Requires paid boost for reach</li>
+                    </ul>
+                </div>
+                
+                <div class="platform-card">
+                    <h4><span class="platform-icon"></span>Instagram</h4>
+                    <ul class="analytics-list">
+                        <li><strong>Tool:</strong> Meta Business Suite</li>
+                        <li><strong>Engagement Rate:</strong> 0.45-4.04%</li>
+                        <li><strong>Best Frequency:</strong> 2 posts/week</li>
+                        <li>Reach rate: 3.50% (12% YoY decline)</li>
+                        <li>Reels: 30% of creator content</li>
+                        <li>Best format: Carousels (0.55%)</li>
+                        <li>Instagram Shopping integration</li>
+                    </ul>
+                </div>
+                
+                <div class="platform-card">
+                    <h4><span class="platform-icon"></span>X (Twitter)</h4>
+                    <ul class="analytics-list">
+                        <li><strong>Tool:</strong> X Analytics</li>
+                        <li><strong>Engagement Rate:</strong> 0.15-2.21%</li>
+                        <li><strong>Best Frequency:</strong> 2 posts/week</li>
+                        <li>Post impressions tracking</li>
+                        <li>Video view rates</li>
+                        <li>Stable but declining usage</li>
+                        <li>X Pro for advanced features</li>
+                    </ul>
+                </div>
+                
+                <div class="platform-card">
+                    <h4><span class="platform-icon"></span>LinkedIn</h4>
+                    <ul class="analytics-list">
+                        <li><strong>Tool:</strong> LinkedIn Analytics</li>
+                        <li><strong>Engagement Rate:</strong> 3.0-3.9%</li>
+                        <li><strong>Best Frequency:</strong> 2 posts/week</li>
+                        <li>Ad clicks: ~3%</li>
+                        <li>B2B influencer hub in 2025</li>
+                        <li>Comments weighted higher than likes</li>
+                        <li>Video content performs best</li>
+                    </ul>
+                </div>
+                
+                <div class="platform-card">
+                    <h4><span class="platform-icon"></span>TikTok</h4>
+                    <ul class="analytics-list">
+                        <li><strong>Tool:</strong> TikTok Analytics</li>
+                        <li><strong>Engagement Rate:</strong> 1.5-7.5%</li>
+                        <li><strong>Best Frequency:</strong> 14 posts/week (daily)</li>
+                        <li>Highest engagement platform 2025</li>
+                        <li>Smaller accounts: 7.5% engagement</li>
+                        <li>TikTok Shop driving commerce</li>
+                        <li>Education content: 9.5% engagement</li>
+                    </ul>
+                </div>
+                
+                <div class="platform-card">
+                    <h4><span class="platform-icon"></span>Pinterest</h4>
+                    <ul class="analytics-list">
+                        <li><strong>Tool:</strong> Pinterest Analytics</li>
+                        <li>Pin click rate: 0.25% (acceptable)</li>
+                        <li>Pin save rate: 0.3%-1%</li>
+                        <li>Evergreen content lasts 2x longer</li>
+                        <li>Best time: 1-2 PM daily</li>
+                        <li>Visual discovery platform</li>
+                    </ul>
+                </div>
+                
+                <div class="platform-card">
+                    <h4><span class="platform-icon"></span>YouTube</h4>
+                    <ul class="analytics-list">
+                        <li><strong>Tool:</strong> YouTube Analytics</li>
+                        <li>Video views & watch time</li>
+                        <li>Average view duration critical</li>
+                        <li>Subscriber count (T-Series: 218M)</li>
+                        <li>Shorts competing with TikTok</li>
+                        <li>YouTube Shopping features</li>
+                        <li>Revenue tracking (monetized)</li>
+                    </ul>
+                </div>
+                
+                <div class="platform-card">
+                    <h4><span class="platform-icon"></span>Snapchat</h4>
+                    <ul class="analytics-list">
+                        <li><strong>Tool:</strong> Ads Manager</li>
+                        <li>Swipe-ups: $0.57/swipe</li>
+                        <li>Ad performance tracking</li>
+                        <li>Paid impressions metrics</li>
+                        <li>AR filter engagement</li>
+                        <li>Younger demographic focus</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section" style="background: #f8f9fa;">
+            <h2 class="section-title">🔥 2025 Trends & Innovations</h2>
+            
+            <div class="trend-2025">
+                <h3>Current Social Media & Community Marketing Trends (2025 Verified)</h3>
+                <div class="trend-grid">
+                    <div class="trend-item">
+                        <h5>🤖 AI Integration (92%)</h5>
+                        <p>92% of brands now use AI for influencer workflows. AI tools power content creation, performance prediction, talent sourcing, and real-time optimization. Tools like TikTok Symphony and ChatGPT are standard.</p>
+                    </div>
+                    
+                    <div class="trend-item">
+                        <h5>📱 TikTok Dominance</h5>
+                        <p>TikTok leads engagement at 1.5-7.5% (highest of all platforms). Smaller accounts achieve 7.5% engagement. Platform drives product discovery with TikTok Shop generating billions in social commerce revenue.</p>
+                    </div>
+                    
+                    <div class="trend-item">
+                        <h5>🛍️ Social Commerce Explosion</h5>
+                        <p>97% of Gen Z use social for shopping inspiration. Instagram Shopping, TikTok Shop, and affiliate marketing driving instant purchases within apps. Live shopping events surge in popularity.</p>
+                    </div>
+                    
+                    <div class="trend-item">
+                        <h5>👥 Micro/Nano Influencer Boom</h5>
+                        <p>Micro-influencers preferred 10x over macro. Median CPM: $119 (micro), $211 (nano). Engagement rates: 6.15-6.76%. Brands shift to performance-based partnerships with niche creators.</p>
+                    </div>
+                    
+                    <div class="trend-item">
+                        <h5>🎯 Engagement Rate Decline</h5>
+                        <p>Instagram: 0.45% (down 30% YoY). Facebook: 0.15%. Focus shifts to "engagement by reach" and private interactions (DMs, saves) over public metrics. Quality over quantity.</p>
+                    </div>
+                    
+                    <div class="trend-item">
+                        <h5>💼 LinkedIn B2B Revolution</h5>
+                        <p>LinkedIn emerges as B2B influencer hub with 3.0-3.9% engagement. Creator Mode, Newsletters, LinkedIn Live drive professional content. Decision-makers trust LinkedIn creators more than traditional ads.</p>
+                    </div>
+                    
+                    <div class="trend-item">
+                        <h5>📹 Reels & Short-Form Video</h5>
+                        <p>Instagram Reels now 30% of creator content. Short-form video delivers best ROI (60% of marketers). Educational content on TikTok achieves 9.5% engagement. Video essential across all platforms.</p>
+                    </div>
+                    
+                    <div class="trend-item">
+                        <h5>🌍 Hyperlocal Marketing</h5>
+                        <p>Hyperlocal nano-influencers gain traction. AI-powered location analytics enable precision targeting. Community-based marketing outperforms traditional approaches in retention and trust-building.</p>
+                    </div>
+                    
+                    <div class="trend-item">
+                        <h5>📊 ROI-First Strategies</h5>
+                        <p>63% of businesses include ROI targets in influencer contracts. Brands move beyond vanity metrics to track conversions, sales attribution, and actual business impact. Performance dashboards standard.</p>
+                    </div>
+                    
+                    <div class="trend-item">
+                        <h5>🎨 UGC & Authenticity</h5>
+                        <p>User-generated content (UGC) drives 20% higher CTR in campaigns. Brands repurpose influencer content across 3+ channels. Authentic, relatable content outperforms polished corporate posts.</p>
+                    </div>
+                    
+                    <div class="trend-item">
+                        <h5>🔒 Private Engagement</h5>
+                        <p>DM shares and saves replacing public likes. "Send this to..." trends capitalize on private sharing behaviors. Algorithms prioritize meaningful private interactions over broad public reach.</p>
+                    </div>
+                    
+                    <div class="trend-item">
+                        <h5>♿ Accessibility Mandatory</h5>
+                        <p>Alt text, captions, closed captioning, and screen reader optimization now standard. Platforms enforce accessibility features. Inclusive design improves reach and brand reputation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">✅ Best Practices for Success</h2>
+            
+            <div class="best-practices">
+                <h3>Essential Implementation Guidelines (2025 Updated)</h3>
+                <div class="practices-grid">
+                    <div class="practice-item">
+                        <h5>Conduct Regular Social Media Audits</h5>
+                        <p>Review accounts, engagement rates (not just follower counts), ROI metrics, posting frequency effectiveness, and content quality at least quarterly. Focus on engagement by reach.</p>
+                    </div>
+                    
+                    <div class="practice-item">
+                        <h5>Use AI-Powered Management Tools</h5>
+                        <p>Leverage Hootsuite, HubSpot, Sprout Social with AI optimization features. 92% of successful brands use AI for scheduling, content creation, and performance prediction.</p>
+                    </div>
+                    
+                    <div class="practice-item">
+                        <h5>Prioritize Quality Over Quantity</h5>
+                        <p>2 posts/week outperform daily posting on most platforms (except TikTok). Focus on high-engagement content rather than posting frequency. Algorithm rewards quality.</p>
+                    </div>
+                    
+                    <div class="practice-item">
+                        <h5>Optimize for Private Engagement</h5>
+                        <p>Track DM shares, saves, and private interactions—not just public likes. Create "send this to..." content. Algorithms prioritize meaningful private engagement in 2025.</p>
+                    </div>
+                    
+                    <div class="practice-item">
+                        <h5>Invest in Micro/Nano Influencers</h5>
+                        <p>Partner with creators under 100K followers for 6-7% engagement rates. Performance-based contracts with ROI targets. LinkedIn B2B influencers especially effective.</p>
+                    </div>
+                    
+                    <div class="practice-item">
+                        <h5>Implement Social Commerce</h5>
+                        <p>Enable Instagram Shopping, TikTok Shop, and shoppable content. 97% of Gen Z use social for shopping inspiration. Make content instantly purchasable.</p>
+                    </div>
+                    
+                    <div class="practice-item">
+                        <h5>Leverage UGC Strategically</h5>
+                        <p>User-generated content drives 20% higher CTR. Repurpose across 3+ channels. Encourage UGC campaigns and branded challenges for authentic advocacy.</p>
+                    </div>
+                    
+                    <div class="practice-item">
+                        <h5>Track Real ROI Metrics</h5>
+                        <p>Move beyond vanity metrics. Track conversions, customer acquisition cost, engagement by reach, and actual sales attribution. 63% of contracts now include ROI targets.</p>
+                    </div>
+                    
+                    <div class="practice-item">
+                        <h5>Mandatory Accessibility Features</h5>
+                        <p>Alt text, closed captions, plain language, screen reader optimization are non-negotiable. Improves reach, SEO, and brand reputation significantly.</p>
+                    </div>
+                    
+                    <div class="practice-item">
+                        <h5>Platform-Specific Content Formats</h5>
+                        <p>Carousels on Instagram (0.55%), videos on LinkedIn (3.4%), photo albums on Facebook, daily TikToks. Match content type to platform for maximum engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section" style="background: #fff9e6;">
+            <h2 class="section-title">🎨 Platform-Specific Content Strategies</h2>
+            
+            <div class="strategies-grid">
+                <div class="strategy-card">
+                    <h4>Pinterest Strategy</h4>
+                    <ul>
+                        <li>Focus on visual inspiration</li>
+                        <li>Create themed boards</li>
+                        <li>Use keyword-rich descriptions</li>
+                        <li>Target 0.25% click rate minimum</li>
+                        <li>Evergreen content lasts 2x longer</li>
+                        <li>Best time: 1-2 PM daily</li>
+                    </ul>
+                </div>
+                
+                <div class="strategy-card">
+                    <h4>Facebook Strategy (2025)</h4>
+                    <ul>
+                        <li>Focus on photo albums (best format)</li>
+                        <li>Use paid boosts for meaningful reach</li>
+                        <li>2 posts/week optimal frequency</li>
+                        <li>Leverage Facebook Groups</li>
+                        <li>Community-focused content performs</li>
+                        <li>Expect 0.15-2.08% engagement</li>
+                    </ul>
+                </div>
+                
+                <div class="strategy-card">
+                    <h4>Instagram Strategy (2025)</h4>
+                    <ul>
+                        <li>Prioritize Reels (30% of content)</li>
+                        <li>Carousels achieve 0.55% engagement</li>
+                        <li>2 posts/week, 10 AM-3 PM Mon-Thu</li>
+                        <li>Use Instagram Shopping features</li>
+                        <li>Focus on saves & DM shares</li>
+                        <li>Stories for quick engagement</li>
+                    </ul>
+                </div>
+                
+                <div class="strategy-card">
+                    <h4>X (Twitter) Strategy</h4>
+                    <ul>
+                        <li>Post 2x weekly, 9-11 AM Wed-Fri</li>
+                        <li>Use relevant hashtags sparingly</li>
+                        <li>Status updates perform best</li>
+                        <li>Engage in conversations</li>
+                        <li>X Pro for advanced analytics</li>
+                        <li>Expect 0.15-2.21% engagement</li>
+                    </ul>
+                </div>
+                
+                <div class="strategy-card">
+                    <h4>LinkedIn Strategy (2025)</h4>
+                    <ul>
+                        <li>Share thought leadership content</li>
+                        <li>Videos achieve 3.4% engagement</li>
+                        <li>Post 10 AM-1 PM Tue-Thu</li>
+                        <li>B2B influencer partnerships crucial</li>
+                        <li>Comments weighted higher than likes</li>
+                        <li>LinkedIn Live for events</li>
+                    </ul>
+                </div>
+                
+                <div class="strategy-card">
+                    <h4>TikTok Strategy (2025)</h4>
+                    <ul>
+                        <li>Post daily (14 posts/week optimal)</li>
+                        <li>2-5 PM best engagement window</li>
+                        <li>Education content: 9.5% engagement</li>
+                        <li>Smaller accounts achieve 7.5% ER</li>
+                        <li>TikTok Shop for commerce</li>
+                        <li>Authentic, quirky content wins</li>
+                    </ul>
+                </div>
+                
+                <div class="strategy-card">
+                    <h4>YouTube Strategy</h4>
+                    <ul>
+                        <li>Optimize for watch time & retention</li>
+                        <li>YouTube Shorts compete with TikTok</li>
+                        <li>Compelling thumbnails essential</li>
+                        <li>Consistent upload schedule</li>
+                        <li>YouTube Shopping integration</li>
+                        <li>Engage with comments actively</li>
+                    </ul>
+                </div>
+                
+                <div class="strategy-card">
+                    <h4>Blog/Community Strategy</h4>
+                    <ul>
+                        <li>Publish expert-driven content</li>
+                        <li>Optimize for SEO & voice search</li>
+                        <li>Encourage UGC and discussion</li>
+                        <li>Share across social channels</li>
+                        <li>Build email subscriber list</li>
+                        <li>Community > broadcast mentality</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Social Media & Community Marketing Strategy 2025</strong></p>
+            <p>Created for Educational Purposes | Chapter 8: Digital Marketing</p>
+            <p style="margin-top: 15px; font-size: 0.9em;"><strong>Updated:</strong> November 2025 | Sources: Sachdev Digital Marketing 2025, Sprout Social, Hootsuite, Later, HubSpot, Influencer Marketing Factory, Socialinsider, current platform data</p>
+            <p style="margin-top: 10px; font-size: 0.85em; opacity: 0.9;">All engagement rates and metrics verified against Q3-Q4 2025 industry reports</p>
+        </div>
+    </div>
+</body>
+</html>
